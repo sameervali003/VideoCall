@@ -1,0 +1,47 @@
+/* src/components/CallNotification.css */
+.call-notification {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    width: 300px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1000;
+    animation: ring 2s infinite;
+  }
+  
+  @keyframes ring {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+  }
+  
+  .call-notification p {
+    margin: 0;
+    font-size: 18px;
+  }
+  
+  .call-notification button {
+    margin: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    color: white;
+  }
+  
+  .accept-button {
+    background: green;
+  }
+  
+  .decline-button {
+    background: red;
+  }
+  
